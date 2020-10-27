@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NoImageTableViewCell: UITableViewCell {
+class TableViewCell: UITableViewCell {
 
     @IBOutlet var label: UILabel!
     
