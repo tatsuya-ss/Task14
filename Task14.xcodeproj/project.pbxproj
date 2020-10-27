@@ -14,7 +14,7 @@
 		75E1CA3C253EFF2B007F4D3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E1CA3A253EFF2B007F4D3E /* LaunchScreen.storyboard */; };
 		75E1CA45253EFFFE007F4D3E /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E1CA44253EFFFE007F4D3E /* ListTableViewController.swift */; };
 		75E1CA49253F0046007F4D3E /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E1CA48253F0046007F4D3E /* SaveViewController.swift */; };
-		75E1CA4D253F0134007F4D3E /* NoImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E1CA4C253F0134007F4D3E /* NoImageTableViewCell.swift */; };
+		75E1CA4D253F0134007F4D3E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E1CA4C253F0134007F4D3E /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		75E1CA3D253EFF2B007F4D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75E1CA44253EFFFE007F4D3E /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		75E1CA48253F0046007F4D3E /* SaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
-		75E1CA4C253F0134007F4D3E /* NoImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoImageTableViewCell.swift; sourceTree = "<group>"; };
+		75E1CA4C253F0134007F4D3E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 				75E1CA31253EFF2A007F4D3E /* SceneDelegate.swift */,
 				75E1CA44253EFFFE007F4D3E /* ListTableViewController.swift */,
 				75E1CA48253F0046007F4D3E /* SaveViewController.swift */,
-				75E1CA4C253F0134007F4D3E /* NoImageTableViewCell.swift */,
+				75E1CA4C253F0134007F4D3E /* TableViewCell.swift */,
 				75E1CA35253EFF2A007F4D3E /* Main.storyboard */,
 				75E1CA38253EFF2B007F4D3E /* Assets.xcassets */,
 				75E1CA3A253EFF2B007F4D3E /* LaunchScreen.storyboard */,
@@ -145,7 +145,7 @@
 			files = (
 				75E1CA30253EFF2A007F4D3E /* AppDelegate.swift in Sources */,
 				75E1CA49253F0046007F4D3E /* SaveViewController.swift in Sources */,
-				75E1CA4D253F0134007F4D3E /* NoImageTableViewCell.swift in Sources */,
+				75E1CA4D253F0134007F4D3E /* TableViewCell.swift in Sources */,
 				75E1CA32253EFF2A007F4D3E /* SceneDelegate.swift in Sources */,
 				75E1CA45253EFFFE007F4D3E /* ListTableViewController.swift in Sources */,
 			);

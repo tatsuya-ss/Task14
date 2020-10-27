@@ -22,7 +22,7 @@ class ListTableViewController: UITableViewController {
         let identifiers = ["Cell1","Cell2"]
         let identifier = identifiers[indexPath.row % identifiers.count]
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! NoImageTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! TableViewCell
         cell.label.text = fruit[indexPath.row]
         
         return cell
