@@ -9,6 +9,7 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    @IBOutlet var checkIcon: UIImageView!
     @IBOutlet var label: UILabel!
     
     override func awakeFromNib() {

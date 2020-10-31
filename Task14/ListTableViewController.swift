@@ -24,8 +24,23 @@ class ListTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! TableViewCell
         cell.label.text = fruit[indexPath.row]
+        if identifier == "Cell1"{
+            cell.checkIcon.isHidden = true
+        }
+        
+        
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as! TableViewCell
+        if cell.checkIcon.isHidden == true{
+            cell.checkIcon.isHidden = false
+        }else{
+            cell.checkIcon.isHidden = true
+        }
+        
     }
     
     @IBAction func cancel(segue:UIStoryboardSegue){
