@@ -12,8 +12,9 @@ class ListTableViewController:  UITableViewController {
     let KeyName = "Name"
     let KeyCheck = "Check"
     
-    private var fruit:[Dictionary<String,Any>] = []
+    var fruit:[Dictionary<String,Any>] = []
 
+    
     @IBOutlet var plusButton: UIBarButtonItem!
     
     override func viewDidLoad() {
@@ -43,13 +44,16 @@ class ListTableViewController:  UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath) as! TableViewCell
-        if cell.checkIcon.isHidden == true{
-            cell.checkIcon.isHidden = false
-        }else{
-            cell.checkIcon.isHidden = true
+        if let check = self.fruit[indexPath.row][KeyCheck] as? Bool{
+            self.fruit[indexPath.row][KeyCheck] = !check
+            //表示の機能を使うために定数に入れる
+            let checkIndication = TableViewCell()
+            //表示の処理を行う
+            checkIndication.configure(isChecked: check, name: "check")
+            self.tableView.reloadRows(at: [indexPath], with: .automatic)
         }
     }
+    
     
     
     @IBAction func cancel(segue:UIStoryboardSegue){

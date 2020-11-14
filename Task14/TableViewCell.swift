@@ -14,10 +14,11 @@ class TableViewCell: UITableViewCell {
     
     func configure(isChecked: Bool, name: String) {
         // ここに表示の処理を書きましょう
-        
+        //チェックされているときには表示して、チェックされていない時は表示しないという処理を書く
+        if isChecked == true {
+            checkIcon?.image = UIImage(named: "check")
+        }else{
+            checkIcon?.image = nil
+        }
     }
-    
-    
-
-    
 }
