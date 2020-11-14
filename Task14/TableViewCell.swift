@@ -12,15 +12,12 @@ class TableViewCell: UITableViewCell {
     @IBOutlet var checkIcon: UIImageView!
     @IBOutlet var label: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    func configure(isChecked: Bool, name: String) {
+        // ここに表示の処理を書きましょう
+        
     }
+    
+    
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    
 }
