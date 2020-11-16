@@ -18,28 +18,38 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell1" id="aGU-fk-SGd" customClass="TableViewCell" customModule="Task14" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="50.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aGU-fk-SGd" id="N4P-5o-IqE">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="lbz-2e-cLN">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="lbz-2e-cLN">
                                             <rect key="frame" x="20" y="3" width="36" height="36"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ga-z6-Xm0">
-                                            <rect key="frame" x="64" y="11" width="216" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ga-z6-Xm0">
+                                            <rect key="frame" x="64" y="11" width="216" height="28.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="216" id="B8y-fH-f0V"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="4Ga-z6-Xm0" firstAttribute="leading" secondItem="lbz-2e-cLN" secondAttribute="trailing" constant="8" id="Is9-Wa-wO0"/>
+                                        <constraint firstItem="4Ga-z6-Xm0" firstAttribute="centerY" secondItem="N4P-5o-IqE" secondAttribute="centerY" id="LcB-uT-fAL"/>
+                                        <constraint firstItem="lbz-2e-cLN" firstAttribute="top" secondItem="N4P-5o-IqE" secondAttribute="topMargin" constant="-8" id="M1d-IB-hBh"/>
+                                        <constraint firstItem="lbz-2e-cLN" firstAttribute="centerY" secondItem="4Ga-z6-Xm0" secondAttribute="centerY" id="VOz-fM-gEM"/>
+                                        <constraint firstItem="4Ga-z6-Xm0" firstAttribute="top" secondItem="N4P-5o-IqE" secondAttribute="topMargin" id="aDO-xp-cV2"/>
+                                        <constraint firstItem="lbz-2e-cLN" firstAttribute="leading" secondItem="N4P-5o-IqE" secondAttribute="leadingMargin" id="kn2-P4-7WV"/>
+                                        <constraint firstItem="4Ga-z6-Xm0" firstAttribute="leading" secondItem="N4P-5o-IqE" secondAttribute="leading" constant="64" id="z8z-KA-wmv"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="checkIcon" destination="lbz-2e-cLN" id="Rzq-37-J8O"/>
-                                    <outlet property="label" destination="4Ga-z6-Xm0" id="WTe-c1-5JS"/>
+                                    <outlet property="checkIcon" destination="lbz-2e-cLN" id="9uW-kv-r6c"/>
+                                    <outlet property="label" destination="4Ga-z6-Xm0" id="A6q-gP-PMZ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

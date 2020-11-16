@@ -29,17 +29,13 @@ class ListTableViewController:  UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-//        let identifiers = ["Cell1","Cell2"]
-//        let identifier = identifiers[indexPath.row % identifiers.count]
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1", for: indexPath) as! TableViewCell
         let fruitArray = self.fruit[indexPath.row]
-        cell.checkIcon.image = nil
-        if fruitArray[KeyCheck] as? Bool == true{
-            cell.checkIcon.image = UIImage(named: "check")
-        }
-        cell.label.text = (fruitArray[KeyName]  as? String) ?? ""
-       
+        let fruitName = fruitArray[KeyName] as! String
+        let check = (fruitArray[KeyCheck] as? Bool)!
+        //セルのチェックマークの処理
+        cell.configure(isChecked: check, name: fruitName)
+//        cell.label.text = (fruitArray[KeyName]  as? String) ?? ""
         return cell
     }
     
@@ -47,9 +43,7 @@ class ListTableViewController:  UITableViewController {
         if let check = self.fruit[indexPath.row][KeyCheck] as? Bool{
             self.fruit[indexPath.row][KeyCheck] = !check
             //表示の機能を使うために定数に入れる
-            let checkIndication = TableViewCell()
             //表示の処理を行う
-            checkIndication.configure(isChecked: check, name: "check")
             self.tableView.reloadRows(at: [indexPath], with: .automatic)
         }
     }
