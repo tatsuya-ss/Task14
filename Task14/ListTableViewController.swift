@@ -42,8 +42,6 @@ class ListTableViewController:  UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let check = self.fruit[indexPath.row][KeyCheck] as? Bool{
             self.fruit[indexPath.row][KeyCheck] = !check
-            //表示の機能を使うために定数に入れる
-            //表示の処理を行う
             self.tableView.reloadRows(at: [indexPath], with: .automatic)
         }
     }

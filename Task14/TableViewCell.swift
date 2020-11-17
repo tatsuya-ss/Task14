@@ -8,16 +8,9 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-    
-    @IBOutlet var checkIcon: UIImageView!
-    
-    @IBOutlet var label: UILabel!
-    
-    
-
-    let list = ListTableViewController()
-    
-    
+    //privateを付けることで他のクラスからアクセスできない
+    @IBOutlet private var  checkIcon: UIImageView!
+    @IBOutlet private var  label: UILabel!
     
     func configure(isChecked: Bool, name: String) {
         // ここに表示の処理を書きましょう
